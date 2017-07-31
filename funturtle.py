@@ -1,3 +1,4 @@
+import turtle
 UP_ARROW = 'Up'
 LEFT_ARROW = 'Left'
 DOWN_ARROW = 'Down'
@@ -12,16 +13,21 @@ RIGHT = 3
 direction = UP
 
 def up():
-    global direction    
+    global direction
     direction = UP
-    print("You dun pressed the Up key")
+    print ("You pressed up")
 
-    onekeypress(function_name, key)
+def up():
+    global direction
+    direction = DOWN
+    print ("You pressed down")
 
-    turtle.onkeypress(up, UP_ARROW)
-    turtle.onkeypress(down, DOWN_ARROW)
-    turtle.onkeypress(left, LEFT_ARROW)
-    turtle.onkeypress(right, RIGHT_ARROW)
+def up():
+    global direction
+    direction = LEFT
+    print ("You pressed left")
 
-    turtle.listen()
-    
+def up():
+    global direction
+    direction = RIGHT
+    print ("You pressed right")
